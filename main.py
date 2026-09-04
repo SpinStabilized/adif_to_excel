@@ -9,7 +9,7 @@ def get_address(calls: list[str]) -> dict[str, str]:
     load_dotenv()
     qrz_call: str = os.getenv("QRZ_CALL")
     qrz_api_key: str = os.getenv("QRZ_API_KEY")
-    print(qrz_call, qrz_api_key)
+
     session: qrzlib.QRZ = qrzlib.QRZ()
     session.authenticate(qrz_call, qrz_api_key)
 
