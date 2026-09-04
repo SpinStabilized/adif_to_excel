@@ -1,13 +1,14 @@
 [project]
 name = "adif-to-excel"
-version = "0.1.0"
-description = "Add your description here"
+version = "0.2.0"
+description = "Turn an ADIF log into a QSL-label spreadsheet, with addresses from QRZ.com."
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "adiftools>=0.1.12",
     "google-i18n-address>=3.1.1",
     "openpyxl>=3.1.5",
+    "pandas>=2.2",
     "pycountry>=26.2.16",
     "python-dotenv>=1.2.3",
     "qrzlib>=2.1.0",
